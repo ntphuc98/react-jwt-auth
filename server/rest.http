@@ -1,0 +1,33 @@
+GET http://localhost:3100
+
+###
+POST http://localhost:3100/register
+Content-Type: application/json
+
+{
+  "email": "user03@gmail.com",
+  "password": "password-user03" 
+}
+
+###
+POST http://localhost:3100/login
+Content-Type: application/json
+
+{
+  "username": "user01",
+  "password": "password-user01" 
+}
+
+###
+POST http://localhost:3100/logout
+
+###
+POST http://localhost:3100/refresh-token
+
+###
+GET http://localhost:3100/protected-route
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXIwMSIsImVtYWlsIjoidXNlcjAxQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoidXNlcjAxIiwicm9sZSI6Im1lbWJlciIsImlhdCI6MTY0OTY5NTEwOSwiZXhwIjoxNjQ5Njk4NzA5fQ.c_8Ryp8vtysIt20DlIPy5WUsU0ULgWICTeuTp-QeuV0
+
+###
+GET http://localhost:3100/protected-route
+Authorization: Bearer eyJhbGciOiJIUzI1NiIs
